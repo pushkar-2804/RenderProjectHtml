@@ -1,3 +1,6 @@
+:root {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +9,10 @@ body {
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+.subheading {
+  text-align: center;
 }
 
 /* ===================================================================== */
@@ -100,14 +107,48 @@ body {
   }
 }
 
+/* ========================================================================= */
+/* GALLERY */
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.galleryImgWrap {
+  width: 33.33%; /* Each image occupies 33.33% of the container width */
+  padding: 10px;
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.galleryImgWrap img {
+  width: 100%; /* Ensure each image fills its container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 80%;
+  display: block; /* Remove any extra space below images */
+}
+
+.galleryImgWrap:hover img {
+  transition: all 0.4s;
+  transform: scale(1.05); /* Zoom in slightly on hover */
+}
+
+@media screen and (max-width: 545px) {
+  .gallery-container {
+    padding: 1rem;
+  }
+  .galleryImgWrap {
+    width: 50%;
+  }
+}
+
 /* ====================================================================== */
 /* CONTACT FORM */
 
 #contact {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-wrap: wrap-reverse;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
 }
 form {
   max-width: 400px;
@@ -141,13 +182,14 @@ input[type="submit"]:hover {
   background-color: #45a049;
 }
 
-#frame{
+/* ================================================================ */
+#frame {
   height: 586px;
   width: 650px;
 }
 /* Media Query for Small Devices */
 @media screen and (max-width: 768px) {
-  #frame{
+  #frame {
     height: 286px;
     width: 350px;
   }
@@ -193,8 +235,8 @@ canvas {
   color: white;
   padding: 0 1rem;
   font-size: 1.5rem;
-  width: auto;}
-
+  width: auto;
+}
 
 /* ============================================================= */
 /* FOOTER */
