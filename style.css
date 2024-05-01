@@ -100,3 +100,36 @@ canvas {
 .toolbox > *:last-child {
   margin-left: auto;
 }
+
+/* FOOTER */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1;
+}
+
+.footer-left h3,
+.footer-right h3 {
+  color: #fff;
+}
+
+.footer-right p {
+  margin-bottom: 5px;
+}
+
+.copyright {
+  margin-top: 20px;
+}
