@@ -195,13 +195,7 @@ canvas {
   font-size: 1.5rem;
   width: auto;}
 
-/* Media Query for Small Devices */
-@media screen and (max-width: 768px) {
-  canvas {
-    aspect-ratio: auto 300 / 400;
-}
-}
-  
+
 /* ============================================================= */
 /* FOOTER */
 footer {
