@@ -4,6 +4,11 @@ body {
   font-family: Arial, sans-serif;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* ===================================================================== */
 /* NAVBAR CSS */
 .navbar {
   font-size: 1.3rem;
@@ -40,6 +45,7 @@ body {
   }
 }
 
+/* ========================================================================== */
 /* ABOUT */
 #about {
   padding: 50px 0;
@@ -63,19 +69,18 @@ body {
   font-size: 1.3rem;
   line-height: 1.6;
 }
-#btn{
+#btn {
   background-color: #333;
   padding: 1rem;
   font-size: 1.2rem;
   border-radius: 10px;
   border: none;
- 
 }
-#btn:hover{
+#btn:hover {
   background-color: #555;
   color: white;
 }
-#btn a{
+#btn a {
   color: white;
   text-decoration: none;
 }
@@ -94,11 +99,9 @@ body {
   }
 }
 
+/* ====================================================================== */
 /* CONTACT FORM */
-#contact {
 
-  /* background-color: #333; */
-}
 form {
   max-width: 400px;
   margin: 3rem auto;
@@ -131,6 +134,7 @@ input[type="submit"]:hover {
   background-color: #45a049;
 }
 
+/* ================================================================ */
 /* CANVAS */
 
 canvas {
@@ -138,10 +142,9 @@ canvas {
 }
 
 .toolbox {
-  background-color: steelblue;
+  /* background-color: steelblue; */
   border: 1px solid slateblue;
   display: flex;
-  width: 804px;
   padding: 1rem;
 }
 
@@ -162,7 +165,7 @@ canvas {
 .toolbox > *:last-child {
   margin-left: auto;
 }
-
+/* ============================================================= */
 /* FOOTER */
 footer {
   background-color: #333;
