@@ -53,6 +53,7 @@ body {
   background-image: url("6969721_3452445.jpg");
   background-size: cover;
   height: 80vh;
+  margin-bottom: 1rem;
 }
 
 .container {
@@ -102,11 +103,17 @@ body {
 /* ====================================================================== */
 /* CONTACT FORM */
 
+#contact {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap-reverse;
+}
 form {
   max-width: 400px;
-  margin: 3rem auto;
+  margin: 3rem 0 3rem 0;
   background-color: whitesmoke;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   padding: 2rem;
 }
 input[type="text"],
@@ -135,6 +142,17 @@ input[type="submit"]:hover {
 }
 
 /* ================================================================ */
+#frame{
+  height: 586px;
+  width: 650px;
+}
+/* Media Query for Small Devices */
+@media screen and (max-width: 768px) {
+  #frame{
+    height: 286px;
+    width: 350px;
+  }
+}
 /* CANVAS */
 
 canvas {
