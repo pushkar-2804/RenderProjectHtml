@@ -7,24 +7,31 @@
     <title>Drawing App</title>
   </head>
   <body>
-      <!-- NAVBAR -->
-      <div class="navbar">
-        <a href="index.html"><img src="csi-logo.png" alt="Logo" /></a>
-        <nav class="nav-links">
-          <a class="active" href="index.html">Home</a>
-          <a href="#about">About</a>
-          <a href="canvas.html">My Canvas</a>
-          <a href="index.html#contact">Contact Us</a>
-        </nav>
-      </div>
-    <canvas id="canvas" width="1210" height="580"></canvas>
-    <div class="toolbox">
-      <button id="decrease">-</button>
-      <span id="size">10</span>
-      <button id="increase">+</button>
-      <input type="color" id="color" />
-      <button id="clear">Clear</button>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a href="index.html"><img src="csi-logo.png" alt="Logo" /></a>
+      <nav class="nav-links">
+        <a class="active" href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="canvas.html">My Canvas</a>
+        <a href="index.html#contact">Contact Us</a>
+      </nav>
     </div>
+    <div id="bg">
+      <div class="toolbox">
+        <p>Pen Size</p>
+        <div class="pen-size-div">
+          <button id="decrease">-</button>
+          <span id="size">10</span>
+          <button id="increase">+</button>
+        </div>
+        <p>Pen color</p>
+        <input type="color" id="color" />
+        <button id="clear">Clear</button>
+      </div>
+      <canvas id="canvas" width="700" height="500"></canvas>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
