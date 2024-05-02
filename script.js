@@ -81,6 +81,10 @@ decreaseBtn.addEventListener("click", () => {
   updateSizeOnScreen();
 });
 
+
+
+canvas.style.cursor = "crosshair"; // Change cursor style to crosshair
+
 colorEl.addEventListener("change", (e) => (color = e.target.value));
 
 clearEl.addEventListener("click", () =>
