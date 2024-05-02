@@ -40,7 +40,7 @@ body {
 @media screen and (max-width: 600px) {
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     padding: 10px;
   }
   .navbar img {
@@ -57,7 +57,7 @@ body {
 #about {
   padding: 50px 0;
   text-align: center;
-  background-image: url("6969721_3452445.jpg");
+  background-image: url("./images/6969721_3452445.jpg");
   background-size: cover;
   height: 80vh;
   margin-bottom: 1rem;
